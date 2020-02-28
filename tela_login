@@ -1,0 +1,32 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<button>Registrar</button>
+<h1>VAGA PDC</h1>
+
+
+<form action="autenticação_login.js" method="post">
+  <div>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" />
+  </div>
+  <div>
+    <label for="passwd">Password</label>
+    <input type="password" id="passwd" />
+  </div>
+</form>
+<button>Entrar com o google</button>
+<button>Esqueceu a senha?</button>
+<script>
+
+
+
+</script>
+
+</body>
+
+
+</html>
