@@ -4,41 +4,61 @@ import { StyleSheet, Text, View, TextInput } from 'react-native';
 
 const styles = StyleSheet.create({
 
-  bigBlack: {
+  titulo: {
     color: 'black',
     fontWeight: 'bold',
-    fontSize: 30,
-    alignItems:'center',
-    flex:1,
-    justifyContent:'center',
-    
+    fontSize: 30, 
+    marginTop: 50,
   },
   black:{
-    color:'black',
+    justifyContent:'center',
+    flex:1,
   },
+  formulario:{
+    alignContent:'center',
+    flex:1,
+    marginTop: 50,
+    marginRight: 7,
+    marginBottom: 2,
+    marginLeft: 7,
+    fontSize: 22,
+  },
+  container: {
+    alignItems: 'center',
+    backgroundColor: '#2B7C89',
+    flex: 1
+  }
   });
 
 export default class Login extends Component {
   constructor(props) {
     super(props);
-    this.state = {text: ''};
+    this.state = {email: '',senha: ''};
   }
   render() {
     return (
-      <View style={styles.bigBlack}>
-      <Text>VAGA PCD:{this.state.text}  </Text>
-        
-      <TextInput
+      <View style={styles.container}>
+
+      {/* titulo */} 
+      <View id="titulo">
+      <Text style={styles.titulo}>VAGA PCD</Text>
+      </View>
+
+      {/* inputs */}
+      <View id="form" style={styles.formulario}> 
+      <TextInput 
           placeholder="E-mail"
-          onChangeText={(text) => this.setState({text})}
-          value={this.state.text}
+          onChangeText={(email) => this.setState({email})}
+          value={this.state.email}
+      />
+       <TextInput 
+          placeholder="Senha"
+          onChangeText={(senha) => this.setState({senha})}
+          value={this.state.senha}
       />
       </View>
-    )
+
+      </View>
+    );
   }
 }
-
-
-
-
-
