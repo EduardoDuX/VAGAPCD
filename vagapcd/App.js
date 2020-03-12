@@ -1,64 +1,58 @@
-import React, { Component } from 'react';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import React from 'react';
+import { AppLoading } from 'expo';
+import {Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text} from 'native-base';
+import * as Font from 'expo-font';
+import { Ionicons } from '@expo/vector-icons';
 
-
-const styles = StyleSheet.create({
-
-  titulo: {
-    color: 'black',
-    fontWeight: 'bold',
-    fontSize: 30, 
-    marginTop: 50,
-  },
-  black:{
-    justifyContent:'center',
-    flex:1,
-  },
-  formulario:{
-    alignContent:'center',
-    flex:1,
-    marginTop: 50,
-    marginRight: 7,
-    marginBottom: 2,
-    marginLeft: 7,
-    fontSize: 22,
-  },
-  container: {
-    alignItems: 'center',
-    backgroundColor: '#2B7C89',
-    flex: 1
-  }
-  });
-
-export default class Login extends Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {email: '',senha: ''};
+    this.state = {
+      isReady: false, email: '',senha: ''
+    };
   }
+
+  async componentDidMount() {
+    await Font.loadAsync({
+      Roboto: require('native-base/Fonts/Roboto.ttf'),
+      Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
+      ...Ionicons.font,
+    });
+    this.setState({ isReady: true });
+  }
+
   render() {
+    if (!this.state.isReady) {
+      return <AppLoading />;
+    }
+
     return (
-      <View style={styles.container}>
-
-      {/* titulo */} 
-      <View id="titulo">
-      <Text style={styles.titulo}>VAGA PCD</Text>
-      </View>
-
-      {/* inputs */}
-      <View id="form" style={styles.formulario}> 
-      <TextInput 
-          placeholder="E-mail"
-          onChangeText={(email) => this.setState({email})}
-          value={this.state.email}
-      />
-       <TextInput 
-          placeholder="Senha"
-          onChangeText={(senha) => this.setState({senha})}
-          value={this.state.senha}
-      />
-      </View>
-
-      </View>
+      <Container style={{marginTop:23}}> 
+        <Header>
+          <Left>
+            <Button transparent>
+              <Icon name='menu' />
+            </Button>
+          </Left>
+          <Body>
+            <Title>VAGA PCD</Title>
+          </Body>
+          <Right />
+        </Header>
+        <Content>
+          <Text>
+            This is Content Section
+          </Text>
+        </Content>
+        <Footer>
+          <FooterTab>
+            <Button full>
+              <Text>eduardo
+              </Text>
+            </Button>
+          </FooterTab>
+        </Footer>
+      </Container>
     );
   }
 }
