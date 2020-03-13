@@ -1,14 +1,15 @@
 import React from 'react';
 import { AppLoading } from 'expo';
-import {Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text} from 'native-base';
+import { Container, Header,Text ,Right, Content, Item, Input, Icon, Title, Left, Button, Body, Footer, FooterTab } from 'native-base';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
+
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isReady: false, email: '',senha: ''
+      isReady: false
     };
   }
 
@@ -27,31 +28,46 @@ export default class App extends React.Component {
     }
 
     return (
-      <Container style={{marginTop:23}}> 
-        <Header>
-          <Left>
-            <Button transparent>
-              <Icon name='menu' />
-            </Button>
-          </Left>
-          <Body>
-            <Title>VAGA PCD</Title>
-          </Body>
-          <Right />
-        </Header>
-        <Content>
-          <Text>
-            This is Content Section
-          </Text>
-        </Content>
-        <Footer>
-          <FooterTab>
-            <Button full>
-              <Text>eduardo
+
+      <Container style={{backgroundColor: "white"}}> 
+
+        <Header transparent style={{marginTop: 70}}>
+            <Title>             
+              <Text  style={{color:'black'}, {fontSize: 40}}>
+              VAGA PCD
               </Text>
+            </Title>
+        </Header>
+
+        <Content style={{marginTop: 90}}>
+
+          <Input placeholder='Email' />
+          <Input placeholder='Senha' />
+          
+          <Button style={{marginTop:20}}>
+            <Text>
+              Entrar
+            </Text>
+          </Button>
+
+          <Button style={{marginTop:20}}>
+            <Text>
+              Entrar com o google
+            </Text>
+          </Button>
+
+          <Footer style={{marginTop: 120}}>
+            <FooterTab>
+            <Button>
+              
+              <Text>
+                Esqueceu a senha?
+              </Text>
+              
             </Button>
-          </FooterTab>
-        </Footer>
+            </FooterTab>
+          </Footer>
+        </Content>
       </Container>
     );
   }
