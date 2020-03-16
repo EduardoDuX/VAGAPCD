@@ -29,10 +29,10 @@ export default class App extends React.Component {
 
     return (
 
-      <Container style={{backgroundColor: "white"}}> 
+      <Container style={{backgroundColor: "white"}}>
 
         <Header transparent style={{marginTop: 70}}>
-            <Title>             
+            <Title>
               <Text  style={{color:'black'}, {fontSize: 40}}>
               VAGA PCD
               </Text>
@@ -43,7 +43,7 @@ export default class App extends React.Component {
 
           <Input placeholder='Email' />
           <Input placeholder='Senha' />
-          
+
           <Button style={{marginTop:20}}>
             <Text>
               Entrar
@@ -54,16 +54,16 @@ export default class App extends React.Component {
             <Text>
               Entrar com o google
             </Text>
-          </Button>
+          </Button> 
 
           <Footer style={{marginTop: 120}}>
             <FooterTab>
             <Button>
-              
+
               <Text>
                 Esqueceu a senha?
               </Text>
-              
+
             </Button>
             </FooterTab>
           </Footer>
