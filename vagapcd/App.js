@@ -1,11 +1,30 @@
-import React from 'react';
-import { AppLoading } from 'expo';
-import { Container, Header,Text ,Right, Content, Item, Input, Icon, Title, Left, Button, Body, Footer, FooterTab } from 'native-base';
-import * as Font from 'expo-font';
-import { Ionicons } from '@expo/vector-icons';
+import React, { Component } from 'react';
+import { StyleSheet, View } from 'react-native';
+import {Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text} from 'native-base';
+import MapboxGL from "@react-native-mapbox-gl/maps";
 
+MapboxGL.setConnected(true);
+MapboxGL.setAccessToken("pk.eyJ1IjoidmFnYXBjZCIsImEiOiJjazdtNXp0azkwZjRhM2VucnA2ZDVxZmJoIn0.foRtON7cEC6-6iwP1fTtYg");
+
+const styles = StyleSheet.create({
+  page: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#F5FCFF"
+  },
+  container: {
+    height: 300,
+    width: 300,
+    backgroundColor: "tomato"
+  },
+  map: {
+    flex: 1
+  }
+});
 
 export default class App extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -14,6 +33,7 @@ export default class App extends React.Component {
   }
 
   async componentDidMount() {
+    MapboxGL.setTelemetryEnabled(false);
     await Font.loadAsync({
       Roboto: require('native-base/Fonts/Roboto.ttf'),
       Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
@@ -23,51 +43,36 @@ export default class App extends React.Component {
   }
 
   render() {
-    if (!this.state.isReady) {
-      return <AppLoading />;
-    }
-
     return (
-
-      <Container style={{backgroundColor: "white"}}>
-
-        <Header transparent style={{marginTop: 70}}>
-            <Title>
-              <Text  style={{color:'black'}, {fontSize: 40}}>
-              VAGA PCD
-              </Text>
-            </Title>
-        </Header>
-
-        <Content style={{marginTop: 90}}>
-
-          <Input placeholder='Email' />
-          <Input placeholder='Senha' />
-
-          <Button style={{marginTop:20}}>
-            <Text>
-              Entrar
-            </Text>
-          </Button>
-
-          <Button style={{marginTop:20}}>
-            <Text>
-              Entrar com o google
-            </Text>
-          </Button> 
-
-          <Footer style={{marginTop: 120}}>
-            <FooterTab>
-            <Button>
-
-              <Text>
-                Esqueceu a senha?
-              </Text>
-
+      <Container>
+        <Header>
+          <Left>
+            <Button transparent>
+              <Icon name='menu' />
             </Button>
-            </FooterTab>
-          </Footer>
-        </Content>
+          </Left>
+          <Body>
+            <Title>VAGA PCD</Title>
+          </Body>
+          <Right>
+            <Button transparent>
+              <Icon name='menu' />
+            </Button>
+          </Right>
+        </Header>
+        <View style={styles.page}>
+          <View style={styles.container}>
+            <MapboxGL.MapView style={styles.map}/>
+          </View>
+        </View>
+        <Footer>
+          <FooterTab>
+            <Button full>
+              <Text>eduardo
+              </Text>
+            </Button>
+          </FooterTab>
+        </Footer>
       </Container>
     );
   }
