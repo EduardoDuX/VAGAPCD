@@ -13,6 +13,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#F5FCFF"
   },
+  container: {
+    flex: 1
+  },
   map: {
     height: 500,
     width: 600,
@@ -62,7 +65,7 @@ export default class App extends React.Component {
         </Header>
 
         <View style={styles.page}>
-          <View>
+          <View stule={styles.container}>
             <MapboxGL.MapView style={styles.map}/>
           </View>
         </View>
