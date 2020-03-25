@@ -13,12 +13,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#F5FCFF"
   },
-  container: {
-    height: 300,
-    width: 300,
-    backgroundColor: "tomato"
-  },
   map: {
+    height: 500,
+    width: 600,
     flex: 1
   }
 });
@@ -45,31 +42,39 @@ export default class App extends React.Component {
   render() {
     return (
       <Container>
+
         <Header>
           <Left>
             <Button transparent>
               <Icon name='menu' />
             </Button>
           </Left>
+
           <Body>
             <Title>VAGA PCD</Title>
           </Body>
+
           <Right>
             <Button transparent>
               <Icon name='menu' />
             </Button>
           </Right>
         </Header>
+
         <View style={styles.page}>
-          <View style={styles.container}>
+          <View>
             <MapboxGL.MapView style={styles.map}/>
           </View>
         </View>
+
         <Footer>
           <FooterTab>
             <Button full>
-              <Text>eduardo
+
+              <Text>
+              Localizar vagas mais próximas
               </Text>
+
             </Button>
           </FooterTab>
         </Footer>

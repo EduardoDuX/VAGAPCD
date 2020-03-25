@@ -1,39 +1,68 @@
-import React, { Component } from "react";
-import { StyleSheet, View } from "react-native";
-import MapboxGL from "@react-native-mapbox-gl/maps";
+import React from 'react';
+import { Container, Header,Text ,Right, Content, Item, Input, Icon, Title, Left, Button, Body, Footer, FooterTab } from 'native-base';
 
-MapboxGL.setConnected(true);
-MapboxGL.setAccessToken("pk.eyJ1IjoidmFnYXBjZCIsImEiOiJjazdtNXp0azkwZjRhM2VucnA2ZDVxZmJoIn0.foRtON7cEC6-6iwP1fTtYg");
-
-const styles = StyleSheet.create({
-  page: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
-  },
-  container: {
-    height: 300,
-    width: 300,
-    backgroundColor: "tomato"
-  },
-  map: {
-    flex: 1
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isReady: false
+    };
   }
-});
 
-export default class MapScreen extends Component {
-  componentDidMount() {
-    MapboxGL.setTelemetryEnabled(false);
+  async componentDidMount() {
+    await Font.loadAsync({
+      Roboto: require('native-base/Fonts/Roboto.ttf'),
+      Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
+      ...Ionicons.font,
+    });
+    this.setState({ isReady: true });
   }
 
   render() {
     return (
-      <View style={styles.page}>
-        <View style={styles.container}>
-          <MapboxGL.MapView style={styles.map} />
-        </View>
-      </View>
+
+      <Container style={{backgroundColor: "white"}}>
+
+        <Header transparent style={{marginTop: 70}}>
+            <Title>
+              <Text  style={{color:'black'}, {fontSize: 40}}>
+              VAGA PCD
+              </Text>
+            </Title>
+        </Header>
+
+        <Content style={{marginTop: 90}}>
+
+          <Input placeholder='Email' />
+          <Input placeholder='Senha' />
+
+          <Button style={{marginTop:20}}>
+
+            <Text>
+              Entrar
+            </Text>
+
+          </Button>
+          <Button style={{marginTop:20}}>
+
+            <Text>
+              Entrar com o google
+            </Text>
+
+          </Button>
+        </Content>
+        <Footer>
+          <FooterTab>
+          <Button>
+
+            <Text>
+              Esqueceu a senha?
+            </Text>
+
+          </Button>
+          </FooterTab>
+        </Footer>
+      </Container>
     );
   }
 }
