@@ -1,54 +1,86 @@
+import React, { Component } from 'react';
+import { StyleSheet, View } from 'react-native';
+import {Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text} from 'native-base';
+import MapboxGL from "@react-native-mapbox-gl/maps";
 
-import * as React from 'react';
-import {
-  Container,
-  Header,
-  Content,
-  Card,
-  CardItem,
-  Body,
-  Button,
-  Text,
-  Icon,
-  Fab,
-  View,
-  Title,
-  Left,
-  Right,
-} from 'native-base';
-import { Col, Row, Grid } from 'react-native-easy-grid';
+MapboxGL.setConnected(true);
+MapboxGL.setAccessToken("pk.eyJ1IjoidmFnYXBjZCIsImEiOiJjazkydW0xbWMwNnlrM2VscXI0cGNtbmF1In0.LBtzZ93PiL5MgBqmSyJQYA");
 
-import { Router, Scene, Actions } from 'react-native-router-flux';
+const styles = StyleSheet.create({
+  page: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#F5FCFF"
+  },
+  container: {
+    flex: 1
+  },
+  map: {
+    height: 500,
+    width: 600,
+    flex: 1
+  }
+});
 
-import Login from './login.js';
+export default class Principal extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      isReady: false
+    };
+  }
 
+  async componentDidMount() {
+    MapboxGL.setTelemetryEnabled(false);
+    await Font.loadAsync({
+      Roboto: require('native-base/Fonts/Roboto.ttf'),
+      Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
+      ...Ionicons.font,
+    });
+    this.setState({ isReady: true });
+  }
 
-export default class App extends React.Component {
   render() {
     return (
       <Container>
-        <Router
-          hideNavBar="true"
-          navigationBarStyle={{ backgroundColor: '#302d58' }}>
-          <Scene key="root">
-            <Scene
-              key="Login"
-              component={Login}
-              title="Tela Login"
-              initial={true}
-              titleStyle={{
-                color: '#ffffff',
-                fontSize: 22,
-                fontWeight: '700',
-                justifyContent: 'center',
-                marginLeft: 30,
-              }}
-              headerTintColor="#ffffff"
-            />
 
-          </Scene>
-        </Router>
+        <Header>
+          <Left>
+            <Button transparent>
+              <Icon name='menu' />
+            </Button>
+          </Left>
+
+          <Body>
+            <Title>VAGA PCD</Title>
+          </Body>
+
+          <Right>
+            <Button transparent>
+              <Icon name='menu' />
+            </Button>
+          </Right>
+        </Header>
+
+        <View style={styles.page}>
+          <View stule={styles.container}>
+            <MapboxGL.MapView style={styles.map}/>
+          </View>
+        </View>
+
+        <Footer>
+          <FooterTab>
+            <Button full>
+
+              <Text>
+              Localizar vagas mais próximas
+              </Text>
+
+            </Button>
+          </FooterTab>
+        </Footer>
       </Container>
     );
   }
