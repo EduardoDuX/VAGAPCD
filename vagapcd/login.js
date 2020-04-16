@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Header,Text ,Right, Content, Item, Input, Icon, Title, Left, Button, Body, Footer, FooterTab } from 'native-base';
 
-export default class App extends React.Component {
+export default class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
