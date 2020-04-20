@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "/home/eduardo/VAGAPCD/vagapcd/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "/home/eduardo/.gradle/caches/transforms-2/files-2.1/9f3693404b7b072cf9a4d4d83a597358/jetified-mapbox-android-sdk-9.0.0/res/values-pt-rPT/values-pt-rPT.xml",

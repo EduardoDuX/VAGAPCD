@@ -1,0 +1,24 @@
+<Button
+  onPress={() => {
+    alert('You tapped the button!');
+  }}
+  title="Press Me"
+/>
+
+
+<Button style={{marginTop:20}} onPress="teste">
+
+  <Text>
+    Entrar
+  </Text>
+
+</Button>
+
+
+_onPressButton() {
+  alert('You tapped the button!')
+}
+
+_onPressButton() {
+  alert('You tapped the button!')
+}

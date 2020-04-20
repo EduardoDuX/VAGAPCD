@@ -9,17 +9,17 @@
 9        android:targetSdkVersion="28" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/debug/AndroidManifest.xml:5:5-77
-11-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/debug/AndroidManifest.xml:5:22-75
+11-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/debug/AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:4:5-67
-12-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:4:22-64
+12-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:4:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 13-->[com.facebook.flipper:flipper:0.33.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/cdc250c7219e66e7ecc4d7ad5bc8512d/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
 13-->[com.facebook.flipper:flipper:0.33.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/cdc250c7219e66e7ecc4d7ad5bc8512d/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
 14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-14-->[:react-native-mapbox-gl_maps] /home/eduardo/Desktop/VAGAPCD/vagapcd/node_modules/@react-native-mapbox-gl/maps/android/rctmgl/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-79
-14-->[:react-native-mapbox-gl_maps] /home/eduardo/Desktop/VAGAPCD/vagapcd/node_modules/@react-native-mapbox-gl/maps/android/rctmgl/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-76
+14-->[:react-native-mapbox-gl_maps] /home/eduardo/VAGAPCD/vagapcd/node_modules/@react-native-mapbox-gl/maps/android/rctmgl/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-79
+14-->[:react-native-mapbox-gl_maps] /home/eduardo/VAGAPCD/vagapcd/node_modules/@react-native-mapbox-gl/maps/android/rctmgl/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-76
 15
 16    <uses-feature
 16-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] /home/eduardo/.gradle/caches/transforms-2/files-2.1/9f3693404b7b072cf9a4d4d83a597358/jetified-mapbox-android-sdk-9.0.0/AndroidManifest.xml:9:5-11:35
@@ -42,50 +42,50 @@
 24-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/fb86e485f5f72504e92ff18f075b52b3/jetified-mapbox-android-telemetry-4.7.1/AndroidManifest.xml:12:22-65
 25
 26    <application
-26-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:6:5-25:19
+26-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:6:5-25:19
 27        android:name="com.vagapcd.MainApplication"
-27-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:7:7-38
+27-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:7:7-38
 28        android:allowBackup="false"
-28-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:11:7-34
+28-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:11:7-34
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 29-->[androidx.core:core:1.1.0] /home/eduardo/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
-31-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:9:7-41
+31-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:9:7-41
 32        android:label="@string/app_name"
-32-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:8:7-39
+32-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:8:7-39
 33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:10:7-52
+33-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:10:7-52
 34        android:theme="@style/AppTheme"
-34-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:12:7-38
+34-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:12:7-38
 35        android:usesCleartextTraffic="true" >
-35-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/debug/AndroidManifest.xml:7:18-53
+35-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/debug/AndroidManifest.xml:7:18-53
 36        <activity
-36-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:13:7-23:18
+36-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:13:7-23:18
 37            android:name="com.vagapcd.MainActivity"
-37-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:14:9-37
+37-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:14:9-37
 38            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-38-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:16:9-86
+38-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:16:9-86
 39            android:label="@string/app_name"
-39-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:15:9-41
+39-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:15:9-41
 40            android:launchMode="singleTask"
-40-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:17:9-40
+40-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:17:9-40
 41            android:windowSoftInputMode="adjustResize" >
-41-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:18:9-51
+41-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:18:9-51
 42            <intent-filter>
-42-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:19:9-22:25
+42-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:19:9-22:25
 43                <action android:name="android.intent.action.MAIN" />
-43-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:20:13-65
-43-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:20:21-62
+43-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:20:13-65
+43-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:20:21-62
 44
 45                <category android:name="android.intent.category.LAUNCHER" />
-45-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:21:13-73
-45-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:21:23-70
+45-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:21:13-73
+45-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:21:23-70
 46            </intent-filter>
 47        </activity>
 48        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-48-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:24:7-84
-48-->/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:24:17-81
+48-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:24:7-84
+48-->/home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:24:17-81
 49
 50        <provider
 50-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/fb86e485f5f72504e92ff18f075b52b3/jetified-mapbox-android-telemetry-4.7.1/AndroidManifest.xml:18:9-22:39

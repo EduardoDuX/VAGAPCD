@@ -1,30 +1,13 @@
-import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
-import {Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text} from 'native-base';
-import MapboxGL from "@react-native-mapbox-gl/maps";
+import React from 'react';
+import { Container, Header,Text ,Right, Content, Item, Input, Icon, Title, Left, Button, Body, Footer, FooterTab } from 'native-base';
 
-MapboxGL.setConnected(true);
-MapboxGL.setAccessToken("pk.eyJ1IjoidmFnYXBjZCIsImEiOiJjazkydW0xbWMwNnlrM2VscXI0cGNtbmF1In0.LBtzZ93PiL5MgBqmSyJQYA");
+export default class Login extends React.Component {
 
-const styles = StyleSheet.create({
-  page: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
-  },
-  container: {
-    flex: 1
-  },
-  map: {
-    height: 500,
-    width: 600,
-    flex: 1
+  _onPressButton() {
+    fetch('http://:ipdoPC/usuario')
+      .then(response => response.json())
+      .then(users => console.warn(users))
   }
-});
-
-export default class Principal extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -33,7 +16,6 @@ export default class Principal extends React.Component {
   }
 
   async componentDidMount() {
-    MapboxGL.setTelemetryEnabled(false);
     await Font.loadAsync({
       Roboto: require('native-base/Fonts/Roboto.ttf'),
       Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
@@ -43,42 +25,48 @@ export default class Principal extends React.Component {
   }
 
   render() {
+
     return (
-      <Container>
 
-        <Header>
-          <Left>
-            <Button transparent>
-              <Icon name='menu' />
-            </Button>
-          </Left>
+      <Container style={{backgroundColor: "white"}}>
 
-          <Body>
-            <Title>VAGA PCD</Title>
-          </Body>
-
-          <Right>
-            <Button transparent>
-              <Icon name='menu' />
-            </Button>
-          </Right>
+        <Header transparent style={{marginTop: 70}}>
+            <Title>
+              <Text  style={{color:'black'}, {fontSize: 40}}>
+              VAGA PCD
+              </Text>
+            </Title>
         </Header>
 
-        <View style={styles.page}>
-          <View stule={styles.container}>
-            <MapboxGL.MapView style={styles.map}/>
-          </View>
-        </View>
+        <Content style={{marginTop: 90}}>
 
+
+          <Input placeholder='Email' />
+          <Input placeholder='Senha' />
+
+          <Button
+           onPress={this._onPressButton}
+           title="Press Me"
+         />
+
+
+          <Button style={{marginTop:20}}>
+
+            <Text>
+              Entrar com o google
+            </Text>
+
+          </Button>
+        </Content>
         <Footer>
           <FooterTab>
-            <Button full>
+          <Button>
 
-              <Text>
-              Localizar vagas mais próximas
-              </Text>
+            <Text>
+              Esqueceu a senha?
+            </Text>
 
-            </Button>
+          </Button>
           </FooterTab>
         </Footer>
       </Container>

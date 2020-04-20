@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/eduardo/Desktop/VAGAPCD/vagapcd/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml",
+            "outputFile": "/home/eduardo/VAGAPCD/vagapcd/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml",
             "map": [
                 {
                     "source": "/home/eduardo/.gradle/caches/transforms-2/files-2.1/2b7e6ebaa515cd43f42fb356f0d1941c/appcompat-1.1.0/res/values-bn/values-bn.xml",
