@@ -89,6 +89,16 @@ MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] /home/eduardo/
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/fb86e485f5f72504e92ff18f075b52b3/jetified-mapbox-android-telemetry-4.7.1/AndroidManifest.xml:15:5-67
 	android:name
 		ADDED from /home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:5:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] /home/eduardo/.gradle/caches/transforms-2/files-2.1/9f3693404b7b072cf9a4d4d83a597358/jetified-mapbox-android-sdk-9.0.0/AndroidManifest.xml:17:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] /home/eduardo/.gradle/caches/transforms-2/files-2.1/9f3693404b7b072cf9a4d4d83a597358/jetified-mapbox-android-sdk-9.0.0/AndroidManifest.xml:17:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/fb86e485f5f72504e92ff18f075b52b3/jetified-mapbox-android-telemetry-4.7.1/AndroidManifest.xml:13:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/fb86e485f5f72504e92ff18f075b52b3/jetified-mapbox-android-telemetry-4.7.1/AndroidManifest.xml:13:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.4.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/d1c6163a9980230a0f64655b00498e42/mapbox-android-core-1.4.1/AndroidManifest.xml:11:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.4.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/d1c6163a9980230a0f64655b00498e42/mapbox-android-core-1.4.1/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from /home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:5:22-76
 application
 ADDED from /home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:6:5-25:19
 MERGED from /home/eduardo/VAGAPCD/vagapcd/android/app/src/main/AndroidManifest.xml:6:5-25:19
@@ -305,14 +315,6 @@ ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] /home/eduardo/.gradle
 		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] /home/eduardo/.gradle/caches/transforms-2/files-2.1/9f3693404b7b072cf9a4d4d83a597358/jetified-mapbox-android-sdk-9.0.0/AndroidManifest.xml:14:9-33
 	android:name
 		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] /home/eduardo/.gradle/caches/transforms-2/files-2.1/9f3693404b7b072cf9a4d4d83a597358/jetified-mapbox-android-sdk-9.0.0/AndroidManifest.xml:13:9-45
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] /home/eduardo/.gradle/caches/transforms-2/files-2.1/9f3693404b7b072cf9a4d4d83a597358/jetified-mapbox-android-sdk-9.0.0/AndroidManifest.xml:17:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/fb86e485f5f72504e92ff18f075b52b3/jetified-mapbox-android-telemetry-4.7.1/AndroidManifest.xml:13:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/fb86e485f5f72504e92ff18f075b52b3/jetified-mapbox-android-telemetry-4.7.1/AndroidManifest.xml:13:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.4.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/d1c6163a9980230a0f64655b00498e42/mapbox-android-core-1.4.1/AndroidManifest.xml:11:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.4.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/d1c6163a9980230a0f64655b00498e42/mapbox-android-core-1.4.1/AndroidManifest.xml:11:5-79
-	android:name
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] /home/eduardo/.gradle/caches/transforms-2/files-2.1/9f3693404b7b072cf9a4d4d83a597358/jetified-mapbox-android-sdk-9.0.0/AndroidManifest.xml:17:22-76
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] /home/eduardo/.gradle/caches/transforms-2/files-2.1/fb86e485f5f72504e92ff18f075b52b3/jetified-mapbox-android-telemetry-4.7.1/AndroidManifest.xml:12:5-68
 	android:name

@@ -22,3 +22,12 @@ _onPressButton() {
 _onPressButton() {
   alert('You tapped the button!')
 }
+
+10.0.2.2
+
+, {method: 'post',
+  headers: {
+    'Accept': 'application/json, text/plain, */*',  // It can be used to overcome cors errors
+    'Content-Type': 'application/json'
+},
+  body: JSON.stringify(dataObj)}

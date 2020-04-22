@@ -4,10 +4,12 @@ import { Container, Header,Text ,Right, Content, Item, Input, Icon, Title, Left,
 export default class Login extends React.Component {
 
   _onPressButton() {
-    fetch('http://:ipdoPC/usuario')
-      .then(response => response.json())
-      .then(users => console.warn(users))
+
+    fetch('http://10.0.0.107/usuario')
+        .then(response => response.json())
+        .then(users => console.warn(users))
   }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -29,7 +31,6 @@ export default class Login extends React.Component {
     return (
 
       <Container style={{backgroundColor: "white"}}>
-
         <Header transparent style={{marginTop: 70}}>
             <Title>
               <Text  style={{color:'black'}, {fontSize: 40}}>
@@ -45,7 +46,7 @@ export default class Login extends React.Component {
           <Input placeholder='Senha' />
 
           <Button
-           onPress={this._onPressButton}
+           onPress={() => this._onPressButton()}
            title="Press Me"
          />
 

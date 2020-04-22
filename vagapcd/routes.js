@@ -7,7 +7,7 @@ const mysql = require('mysql');
 const connection = mysql.createPool({
   host     : 'localhost',
   user     : 'root',
-  password : '',
+  password : 'maracu123',
   database : 'db_vaga_pcd'
 });
 
@@ -32,5 +32,5 @@ app.get('/usuario', function (req, res) {
 
 // Iniciando o servidor.
 app.listen(3000, () => {
- console.log('Vai no navegador e entra em http://localhost:3000/users pra ver os usuários cadastrados.');
+ console.log('Vá ao navegador em http://localhost:3000/usuario');
 });
