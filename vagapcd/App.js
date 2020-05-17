@@ -12,9 +12,18 @@ export default class App extends React.Component {
   render(){
     return (
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Login">
-          <Stack.Screen name="Login" component={TelaLogin} />
-          <Stack.Screen name="VAGA PCD" component={TelaMapa} />
+        <Stack.Navigator initialRouteName="Entrar"
+        screenOptions={{
+        headerStyle: {
+          backgroundColor: '#26abff',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }}>
+          <Stack.Screen name="Entrar" component={TelaLogin} />
+          <Stack.Screen name="Mapa" component={TelaMapa} />
         </Stack.Navigator>
       </NavigationContainer>
     );

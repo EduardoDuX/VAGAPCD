@@ -1,6 +1,6 @@
 import React from 'react';
-import {SafeAreaView, Image, View} from 'react-native';
-import { Container, Header,Text ,Right, Content, Item, Input, Icon, Title, Left, Button, Body, Footer, FooterTab } from 'native-base';
+import {StyleSheet, Image, View} from 'react-native';
+import { Form, Label, Container, Header,Text ,Right, Content, Item, Input, Icon, Title, Left, Button, Body, Footer, FooterTab } from 'native-base';
 
 export default class TelaLogin extends React.Component {
 
@@ -34,45 +34,54 @@ export default class TelaLogin extends React.Component {
     return (
 
       <Container>
-      <View style={{flex:3}}>
-        <Header transparent>
+
+      <View style={{flex:1, alignItems:'center'}}>
         <Image style={{width:300, height:200, resizeMode: 'contain'}} source={require('./../assets/icon.png')}/>
-        </Header>
       </View>
 
-        <View style={{flex:6}}>
-        <Content>
-          <Input placeholder='Email' />
-          <Input placeholder='Senha' />
-          <Button onPress={() => navigation.navigate('VAGA PCD')}>
-          <Text>
-          Entrar
-          </Text>
-          </Button>
+      <View  style={{flex:3}}>
+          <Content>
+            <View>
+              <Form>
+                <Item floatingLabel>
+                  <Label>Usuário:</Label>
+                  <Input />
+                  </Item>
+                  <Item floatingLabel>
+                  <Label stle={{alignItems:'center'}}>Senha:</Label>
+                  <Input />
+                </Item>
+              </Form>
+            </View>
 
-          <Button style={{marginTop:20}}>
+            <View>
+              <Button full style={{backgroundColor:'#26abff', marginTop:15}} onPress={() => navigation.navigate('Mapa')}>
+              <Text>
+              Entrar
+              </Text>
+              </Button>
 
-            <Text>
-              Entrar com o google
-            </Text>
+              <Button full style={{backgroundColor:'#26abff', marginTop:3}}>
+                <Text>
+                  Esqueceu a senha?
+                </Text>
+              </Button>
 
-          </Button>
-        </Content>
+              <Button full style={{backgroundColor:'#26abff', marginTop:3}}>
+                <Text>
+                  Entrar com o google
+                </Text>
+              </Button>
+
+              <Button full style={{backgroundColor:'#26abff', marginTop:3}}>
+                <Text>
+                  Criar Conta
+                </Text>
+              </Button>
+            </View>
+
+          </Content>
         </View>
-
-
-
-        <Footer>
-          <FooterTab>
-          <Button>
-
-            <Text>
-              Esqueceu a senha?
-            </Text>
-
-          </Button>
-          </FooterTab>
-        </Footer>
 
       </Container>
 
