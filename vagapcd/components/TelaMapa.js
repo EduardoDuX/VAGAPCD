@@ -5,7 +5,7 @@ from 'native-base';
 import MapboxGL from "@react-native-mapbox-gl/maps";
 
 
-MapboxGL.setAccessToken("pk.eyJ1IjoidmFnYXBjZCIsImEiOiJjazkydW0xbWMwNnlrM2VscXI0cGNtbmF1In0.LBtzZ93PiL5MgBqmSyJQYA");
+MapboxGL.setAccessToken("");
 MapboxGL.setConnected(true);
 
 
